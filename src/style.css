@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Hind Vadodara', sans-serif;
+
+}
+
+.conteiner {
+    position: relative;
+    background-image: url(../chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+}
+.bienvenida {
+    position: absolute;
+    background-color: rgba(83, 57, 49, 0.4);
+    height: 60vh;
+    width: 70%;
+    bottom: 20%;
+    left: 15%;
+}
+.trivia {
+  background: red;
+  width: 100%;
+  height: 100vh;
+}
+img{
+    width: 30%;
+}
