@@ -5,9 +5,9 @@
 
 }
 
-.conteiner {
+.contenido {
     position: relative;
-    background-image: url(../chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
+    background-image: url(../img/chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -20,12 +20,48 @@
     width: 70%;
     bottom: 20%;
     left: 15%;
+   
+
+   
+    
+   
 }
-.trivia {
-  background: red;
-  width: 100%;
-  height: 100vh;
+
+
+.img-liga,
+.img-aven {
+    width: 25%;
+    height: 40%;
+    margin-left:15%;
+    margin-top:1em;
 }
-img{
-    width: 30%;
-}
+ h1,
+ h2 {
+     display:flex;
+     justify-content: center;
+     margin-top:1em;
+     font-weight: 400;
+     font-size: 30px;
+     color: white;
+     
+ }
+ h1{
+     font-size: 35px;
+     letter-spacing: 0.2em;
+ }
+
+ .vengadores-trivia{
+    background-image: url(https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/04/25/Recortada/img_astrid_20171129-152702_imagenes_lv_terceros_infinity-kiAH-U4429976924494NC-992x558@LaVanguardia-Web.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .liga-trivia {
+    background-image: url(https://staticuestudio.blob.core.windows.net/buhomag/2017/11/17095949/Justice-League.jpg?auto=compress,format);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
