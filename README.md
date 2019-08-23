@@ -1,3 +1,3 @@
 #trivia-fan
 
-![] (./Sin título.png)
+![antes] (antes.png)
