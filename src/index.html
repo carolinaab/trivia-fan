@@ -18,46 +18,51 @@
     </header> -->
   <main>
     <section id="elige" class="elige">
+        
         <div class="contenido-elige">
-        <h2 id="bienvenida">Bienvenid@ </h2> 
+        <h2 id="bienvenida">¡Veamos cuánto sabes! </h2> 
         <h3>Elige tu universo favorito</h3>
-        <a href="#vengadores" id="preguntas-vengadores"> <img src="../img/61sGr2gd2TL._SX425_.jpg" alt="vengsdores" width="100"></a>
-        <a href="#liga" id="preguntas-liga"> <img src="../img/270px-The_Justice_League_United_Logo.jpg" alt="liga de la justicia" width="50"> </a> 
+        <a href="#vengadores" id="preguntas-vengadores"> <img src="../img/61sGr2gd2TL._SX425_.jpg" alt="vengadores"  class="logo-veng"></a>
+        <a href="#liga" id="preguntas-liga"> <img src="../img/270px-The_Justice_League_United_Logo.jpg" alt="liga de la justicia" class="logo-liga"> </a> 
     </div>
     </section>
     
     
     <section id="vengadores" class="oculto-categorias">
-        <h2></h2>
+      
        
         <form id="trivia-vengadores" name="trivia">
-                <p class = "preguntas-vengadores"> <strong>¿Quién saco al hombre hormiga del mundo cuántico?</strong></p>
-                <input type="radio"  name="pregunta-vengadores1" value="Una rata">Una rata <br>
-                <input type="radio"  name="pregunta-vengadores1" value="La Viuda Negra"> La Viuda Negra <br>
-                <input type="radio"  name="pregunta-vengadores1" value="Thanos"> Thanos <br>
+            <h4 id="pregunta-vengadores1"></h4>
+            <input type="text" id="datos" placeholder="escribe tu respuesta" autocomplete="off">
+            <button id="boton-vengadores" class="boton-vengadores">Siguiente Pregunta</button>
+            <p id="resolucion" class="resolucion"></p> 
+            <br>
+             <p class = "preguntas-vengadores">opciones pregunta 1</p>
+               <p>Una rata</p>
+               <p>La Viuda Negra</p>
+               <p> Thanos</p>
+               <br>
                 
-                <p class = "preguntas-vengadores"><strong>¿De dónde es Thor?</strong></p>
-                <input type="radio"  name="pregunta-vengadores2" value="Nueva York">Nueva York<br>
-                <input type="radio"  name="pregunta-vengadores2" value="Morag">Morag<br>
-                <input type="radio"  name="pregunta-vengadores2" value="Asgard"> Asgard <br>
-
-                <p class = "preguntas-vengadores" ><strong>¿Qué gema contiene el ojo de Agamotto?</strong></p>
-                <input type="radio"  name="pregunta-vengadores3" value="La gema del alma">La gema del alma<br>
-                <input type="radio"  name="pregunta-vengadores3" value="La gema del tiempo"> La gema del tiempo<br>
-                <input type="radio"  name="pregunta-vengadores3" value="La gema de la realida"> La gema de la realidad <br>
+               <p class = "preguntas-vengadores">opciones pregunta 2</p>
+               <p>Nueva York</p>
+               <p>Morag</p>
+               <p>Asgard</p> 
+               <br>
                 
-                 <label for="">ingresa tu nombre</label>
-                 <input type="text">
-                <input id="botonArte" type ="button" value="Enviar">
-        </form>
+               
+                
+                <p class = "preguntas-vengadores">opciones pregunta 3</p>
+                <p>La gema del alma</p>
+                <p>La gema del alma</p>
+                <p>  La gema de la realidad</p>
+                <br>
+                
+                
+               
+        </form> 
     </section>
 
-    <!-- <div id="enviadoArte" >
-        <p id = "correctas"></p>
-        <p id = "mensaje"></p>
-        <img id = "imagen"> -->
 
-       <!-- <a href="#elige">¿Volver a jugar?</a> -->
     </div>
 
     <section id="liga" class="oculto-categorias">
