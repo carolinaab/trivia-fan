@@ -17,75 +17,141 @@
         </nav>
     </header> -->
     <main>
-        <section id="elige" class="elige">
+        <section id="elige-universo" class="elige-universo">
+
             <div class="contenido-elige">
-                <h2 id="bienvenida">Bienvenid@ </h2>
+                <h2 id="bienvenida">¡Veamos cuánto sabes! </h2>
                 <h3>Elige tu universo favorito</h3>
                 <a href="#vengadores" id="preguntas-vengadores"> <img src="../img/61sGr2gd2TL._SX425_.jpg"
-                        alt="vengsdores" width="100"></a>
+                        alt="vengadores" class="logo-veng"></a>
                 <a href="#liga" id="preguntas-liga"> <img src="../img/270px-The_Justice_League_United_Logo.jpg"
-                        alt="liga de la justicia" width="50"> </a>
+                        alt="liga de la justicia" class="logo-liga"> </a>
             </div>
         </section>
 
 
         <section id="vengadores" class="oculto-categorias">
-            <h2></h2>
+
 
             <form id="trivia-vengadores" name="trivia">
-                <p class="preguntas-vengadores"> <strong>¿Quién saco al hombre hormiga del mundo cuántico?</strong></p>
-                <input type="radio" name="pregunta-vengadores1" value="Una rata">Una rata <br>
-                <input type="radio" name="pregunta-vengadores1" value="La Viuda Negra"> La Viuda Negra <br>
-                <input type="radio" name="pregunta-vengadores1" value="Thanos"> Thanos <br>
-
-                <p class="preguntas-vengadores"><strong>¿De dónde es Thor?</strong></p>
-                <input type="radio" name="pregunta-vengadores2" value="Nueva York">Nueva York<br>
-                <input type="radio" name="pregunta-vengadores2" value="Morag">Morag<br>
-                <input type="radio" name="pregunta-vengadores2" value="Asgard"> Asgard <br>
-
-                <p class="preguntas-vengadores"><strong>¿Qué gema contiene el ojo de Agamotto?</strong></p>
-                <input type="radio" name="pregunta-vengadores3" value="La gema del alma">La gema del alma<br>
-                <input type="radio" name="pregunta-vengadores3" value="La gema del tiempo"> La gema del tiempo<br>
-                <input type="radio" name="pregunta-vengadores3" value="La gema de la realida"> La gema de la realidad
+                <h4 id="pregunta-vengadores1"></h4>
+                <input type="text" id="datos" placeholder="escribe tu respuesta" autocomplete="off">
+                <button id="boton-vengadores" class="boton-vengadores">Siguiente Pregunta</button>
+                <p id="resolucion" class="resolucion"></p>
+                <br>
+                <p class="preguntas-vengadores">opciones pregunta 1</p>
+                <p>Una rata</p>
+                <p>La Viuda Negra</p>
+                <p> Thanos</p>
                 <br>
 
-                <p>Ingresa tu nombre</p>
-                <input type="text" id="nombre-usuario1">
-                <input id="boton-vengadores" type="button" value="Enviar respuestas">
-                <p id="imprimir-nombre"></p>
+                <p class="preguntas-vengadores">opciones pregunta 2</p>
+                <p>Nueva York</p>
+                <p>Morag</p>
+                <p>Asgard</p>
+                <br>
+
+
+
+                <p class="preguntas-vengadores">opciones pregunta 3</p>
+                <p>La gema del alma</p>
+                <p>La gema del alma</p>
+                <p> La gema de la realidad</p>
+                <br>
+
+
+
             </form>
         </section>
 
 
-
-        <!-- <a href="#elige">¿Volver a jugar?</a> -->
         </div>
 
         <section id="liga" class="oculto-categorias">
 
             <form id="trivia-liga" name="trivia">
                 <p class="preguntas-liga" id="pregunta-liga"><strong>¿Qué daña a Super Man?</strong></p>
-                <input type="radio" name="pregunta-liga" value="Balas">Balas<br>
-                <input type="radio" name="pregunta-liga" value="Bomba nuclear">Bomba nuclear<br>
-                <input type="radio" name="pregunta-liga" value="Kriptonita">Kriptonita<br>
+                <input type="radio" name="preguntaCiencia" value="Balas">Balas<br>
+                <input type="radio" name="preguntaCiencia" value="Bomba nuclear">Bomba nuclear<br>
+                <input type="radio" name="preguntaCiencia" value="Kriptonita">Kriptonita<br>
 
                 <p class="preguntas-liga" id="preguntas-liga2"><strong>¿Cómo se llama el compañero de Aquaman?</strong>
                 </p>
-                <input type="radio" name="pregunta-liga2" value="Aqualab">Aqualab<br>
-                <input type="radio" name="pregunta-liga2" value="flash">flash<br>
-                <input type="radio" name="pregunt-liga2" value="Batman"> Batman<br>
+                <input type="radio" name="preguntaCiencia2" value="Aqualab">Aqualab<br>
+                <input type="radio" name="preguntaCiencia2" value="flash">flash<br>
+                <input type="radio" name="preguntaCiencia2" value="Batman"> Batman<br>
 
                 <p class="preguntas-liga" id="preguntas-liga3"><strong>¿De quién es hija la Mujer Maravilla?</strong>
                 </p>
-                <input type="radio" name="pregunta-liga" value="Barry Alen">Barry Alen<br>
-                <input type="radio" name="pregunta-liga" value=" Zeus"> Zeus <br>
-                <input type="radio" name="pregunta-liga" value="Victor Stone"> Victor Stone <br>
+                <input type="radio" name="preguntaCiencia3" value="Barry Alen">Barry Alen<br>
+                <input type="radio" name="preguntaCiencia3" value=" Zeus"> Zeus <br>
+                <input type="radio" name="preguntaCiencia3" value="Victor Stone"> Victor Stone <br>
 
-                <p>Ingresa tu nombre</p>
-                <input type="text" id="nombre-ususrio2">
-                <input id="boton-liga" type="button" value="Enviar respuestas">
+                <label for="nombre">ingresa tu nombre</label>
+                <input type="text" name="nombre">
+                <input id="botonCiencia" type="button" value="Enviar" onclick="checkCiencia();">
             </form>
         </section>
+    </main>
+
+
+    <section id="vengadores" class="oculto-categorias">
+        <h2></h2>
+
+        <form id="trivia-vengadores" name="trivia">
+            <p class="preguntas-vengadores"> <strong>¿Quién saco al hombre hormiga del mundo cuántico?</strong></p>
+            <input type="radio" name="pregunta-vengadores1" value="Una rata">Una rata <br>
+            <input type="radio" name="pregunta-vengadores1" value="La Viuda Negra"> La Viuda Negra <br>
+            <input type="radio" name="pregunta-vengadores1" value="Thanos"> Thanos <br>
+
+            <p class="preguntas-vengadores"><strong>¿De dónde es Thor?</strong></p>
+            <input type="radio" name="pregunta-vengadores2" value="Nueva York">Nueva York<br>
+            <input type="radio" name="pregunta-vengadores2" value="Morag">Morag<br>
+            <input type="radio" name="pregunta-vengadores2" value="Asgard"> Asgard <br>
+
+            <p class="preguntas-vengadores"><strong>¿Qué gema contiene el ojo de Agamotto?</strong></p>
+            <input type="radio" name="pregunta-vengadores3" value="La gema del alma">La gema del alma<br>
+            <input type="radio" name="pregunta-vengadores3" value="La gema del tiempo"> La gema del tiempo<br>
+            <input type="radio" name="pregunta-vengadores3" value="La gema de la realida"> La gema de la realidad
+            <br>
+
+            <p>Ingresa tu nombre</p>
+            <input type="text" id="nombre-usuario1">
+            <input id="boton-vengadores" type="button" value="Enviar respuestas">
+            <p id="imprimir-nombre"></p>
+        </form>
+    </section>
+
+
+
+    <!-- <a href="#elige">¿Volver a jugar?</a> -->
+    </div>
+
+    <section id="liga" class="oculto-categorias">
+
+        <form id="trivia-liga" name="trivia">
+            <p class="preguntas-liga" id="pregunta-liga"><strong>¿Qué daña a Super Man?</strong></p>
+            <input type="radio" name="pregunta-liga" value="Balas">Balas<br>
+            <input type="radio" name="pregunta-liga" value="Bomba nuclear">Bomba nuclear<br>
+            <input type="radio" name="pregunta-liga" value="Kriptonita">Kriptonita<br>
+
+            <p class="preguntas-liga" id="preguntas-liga2"><strong>¿Cómo se llama el compañero de Aquaman?</strong>
+            </p>
+            <input type="radio" name="pregunta-liga2" value="Aqualab">Aqualab<br>
+            <input type="radio" name="pregunta-liga2" value="flash">flash<br>
+            <input type="radio" name="pregunt-liga2" value="Batman"> Batman<br>
+
+            <p class="preguntas-liga" id="preguntas-liga3"><strong>¿De quién es hija la Mujer Maravilla?</strong>
+            </p>
+            <input type="radio" name="pregunta-liga" value="Barry Alen">Barry Alen<br>
+            <input type="radio" name="pregunta-liga" value=" Zeus"> Zeus <br>
+            <input type="radio" name="pregunta-liga" value="Victor Stone"> Victor Stone <br>
+
+            <p>Ingresa tu nombre</p>
+            <input type="text" id="nombre-ususrio2">
+            <input id="boton-liga" type="button" value="Enviar respuestas">
+        </form>
+    </section>
     </main>
     <script src="app.js"></script>
     <script src="main.js"></script>

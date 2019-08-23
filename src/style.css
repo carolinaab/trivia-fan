@@ -4,19 +4,23 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* estilos Generales */
+/* estilos GENERALES */
 h2,
-h3 {
-    color: aliceblue;
-    font-weight: 400;
-    padding-top: 5%;
-    font-size: 20px;
+h4
+{
+    font-size: 25px;
+    color:white;
 }
-h2 {
+h3{
+    font-size: 20px;
+    color: white;
+}
+.resolucion{
+    color: rgb(23, 53, 22);
     font-size: 25px;
 }
 /* estilos ELIGE */
-.elige{
+.elige-universo{
     background-image: url(../img/chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
     width: 100% ;
     height: 100vh;
@@ -28,6 +32,7 @@ h2 {
     justify-items: center;
   
 }
+
 .contenido-elige  {
     background: rgba(73, 65, 65, 0.3);
     width: 80%;
@@ -59,6 +64,7 @@ img{
 }
 .preguntas-vengadores{
     margin-top: 1em;
+
 }
 
 /* estilos seccion LIGA DE LA JUSTICIA */
@@ -69,3 +75,67 @@ img{
 .oculto-categorias {
     display: none;
 }
+
+@media (min-width: 700px) { 
+
+    .elige{
+        background-image: url(../img/chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
+        width: 100% bottom ;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        justify-content: center;
+        justify-items: center; 
+      
+    }
+   img {
+       padding-bottom: 1em;
+       display: inline;
+
+   }
+   .logo-veng {
+       width: 20%;
+       margin-left: 1em;
+   }
+   .logo-liga {
+    width: 22%
+   }
+    .contenido-elige  {
+        background: rgba(73, 65, 65, 0.3);
+        width: 80%;
+        height: 80vh;
+        margin-top: 5%;
+        text-align: center;
+       
+        
+       
+    }
+    h3 {
+        font-size: 30px; 
+    }
+    h2{
+        font-size: 35px;
+        padding-bottom: 0.3em;
+    }
+    input[type="text"] {
+        width: 20%;
+        height:5vh;
+        margin-top: 2em;
+        border-radius: 11px 11px 11px 11px;
+        outline: none;
+        
+    }
+
+    .boton-vengadores {
+        width: 15%;
+        height: 5vh;
+        background-color:rgb(93, 189, 144);
+        border-radius: 74px 74px 74px 74px;
+        outline: none;
+        font-weight: bold;
+       
+    }
+}
+
