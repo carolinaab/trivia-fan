@@ -1,3 +1,3 @@
 #trivia-fan
 
-![antes] (antes.png)
+![] (https://codepen.io/ab-aly-karo/pen/WBdWxK)
