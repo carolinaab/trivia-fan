@@ -1,95 +1,71 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Estilos Generales */
-
-
- 
-
-
- .img-liga{
-  width: 50%;
-  margin-left:25%;
-  margin-top:2em;
- }
- /* Estilos BIENVENIDA */
-.bienvenida{
-    background-image: url(../img/chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    
+/* estilos Generales */
+h2,
+h3 {
+    color: aliceblue;
+    font-weight: 400;
+    padding-top: 5%;
+    font-size: 20px;
 }
 h2 {
-    display:flex;
+    font-size: 25px;
+}
+/* estilos ELIGE */
+.elige{
+    background-image: url(../img/chuttersnap-B-BJ1Yg0RNw-unsplash.jpg);
+    width: 100% ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    display: flex;
     justify-content: center;
-    font-weight: 400;
-    font-size: 30px;
-    color: white;
-    
+    justify-items: center;
+  
 }
-h1{
-    font-size: 35px;
-    letter-spacing: 0.1em;
-    padding-top: 1em;
-    padding-left: 0.1em;
-    color: white;
+.contenido-elige  {
+    background: rgba(73, 65, 65, 0.3);
+    width: 80%;
+    height: 85vh;
+    margin-top: 15%;
     text-align: center;
- 
+   
+}
+img{
+    display: block;
+    width: 60%;
+    padding-top: 10%;
+    margin-left: 20%;
+
 }
 
-/* .contenedor-bienvenida {
-    /* position: absolute;
-    background-color: rgba(83, 57, 49, 0.4);
-    height: 60vh;
-    width: 200%;
-    bottom: 20%;
-    left: 15%; */
-   
 
-
-
-
-/* Estilos VENGADORES */
- 
- .vengadores-oculto{
-    background:rgba(218, 70, 25, 0.4);
-    width: 100%;
+/* estilos seccion VENGADORES */
+.oculto-categorias{
+    background: rgb(155, 121, 121);
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    justify-items: center;
+    padding: 2em;
+    
 
-  .liga-oculto {
-    background: rgba(83, 57, 49, 0.4);
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-   
- .img-aven {
-    width: 50%;
-    height: 25vh;
-    margin-left:25%;
-    margin-top:1em;
 }
-  
+.preguntas-vengadores{
+    margin-top: 1em;
+}
 
-  /* estilos LIGA  */
- 
-  
+/* estilos seccion LIGA DE LA JUSTICIA */
 
-  .liga-oculto {
-      display: none;
-  }
-  .vengadores-oculto {
-      display: none;
-  }
-  
+
+
+/* secciones ocultas */
+.oculto-categorias {
+    display: none;
+}
